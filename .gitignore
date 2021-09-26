@@ -5,6 +5,6 @@ yarn-error.log
 .vscode/*.json
 dist/*
 dist
-./test-client
+client
 uploads/*.*
 uploads/*

@@ -61,7 +61,7 @@
   },
   "exclude": [
     "./dist",
-    "./test-client",
+    "client",
     "./build-tools",
     "./coverage",
     "./node_modules",
