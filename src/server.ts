@@ -1,12 +1,19 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import uploadRoute from './routes/uploadRoute';
+import { corsList } from './constants';
 
 function init() {
   dotenv.config();
-
   const app = express();
 
+  // Middlewares
+  app.use(cors({
+    origin: corsList,
+  }));
+
+  // Routes
   app.use('/upload', uploadRoute);
 
   app.use('/client', express.static('client'));
