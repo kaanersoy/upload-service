@@ -59,3 +59,11 @@ GET /uploads/:photoName
 ```
 
 That will return img that you uploaded.
+
+Also you can get resized images with `resize` query param.
+
+Example:
+```
+// This will gave you a 1000px width resized image.
+GET /uploads/:photoName?resize=1000
+```
