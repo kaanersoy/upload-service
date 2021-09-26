@@ -1,4 +1,4 @@
-import { UPLOAD_FILE_FIELD } from '../constants';
+import { successfullUploadMessage, UPLOAD_FILE_FIELD } from '../constants';
 
 const uploadFileController = (req, res) => {
   const { file } = req;
@@ -7,7 +7,7 @@ const uploadFileController = (req, res) => {
   }
   return res.send({
     status: 'success',
-    message: 'Upload is succesfull!',
+    message: successfullUploadMessage,
     fileName: file.filename,
   });
 };

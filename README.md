@@ -1,3 +1,3 @@
-# Upload Service
+# Upload Service (in development)
 
-Upload service for distributed services
+Upload service for distributed service

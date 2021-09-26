@@ -1,5 +1,5 @@
 import faker from 'faker';
-import { UPLOAD_FILE_FIELD } from '../src/constants';
+import { successfullUploadMessage, UPLOAD_FILE_FIELD } from '../src/constants';
 import { uploadFileController } from '../src/controllers/uploadFileController';
 
 describe('uploadFileController specs', () => {
@@ -22,7 +22,7 @@ describe('uploadFileController specs', () => {
     uploadFileController(request, response);
     expect(response.send).toBeCalledWith({
       status: 'success',
-      message: 'Upload is succesfull!',
+      message: successfullUploadMessage,
       fileName: request.file.filename,
     });
   });

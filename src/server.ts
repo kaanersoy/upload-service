@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
