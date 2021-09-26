@@ -24,4 +24,12 @@ module.exports = {
     '<rootDir>/node_modules_prune/',
     '<rootDir>/dist/',
   ],
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
+  },
 };
