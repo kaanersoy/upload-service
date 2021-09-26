@@ -2,9 +2,8 @@ const inputEl = document.getElementById('img-upload');
 const uploadButtonEl = document.getElementById('upload-button');
 
 const uploadFile = async (file) => {
-  console.log(file);
   const formData = new FormData();
-  formData.append('avatar', file);
+  formData.append('file', file);
 
   const response = await fetch('/upload', {
     method: 'POST',
@@ -15,7 +14,6 @@ const uploadFile = async (file) => {
 };
 
 uploadButtonEl.addEventListener('click', async () => {
-  const file = inputEl[0];
-  const response = await uploadFile(file);
+  const response = await uploadFile(inputEl.files[0]);
   console.log(response);
 });
