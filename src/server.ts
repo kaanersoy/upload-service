@@ -17,6 +17,7 @@ function init() {
   // Routes
   app.use('/upload', uploadRoute);
   app.use('/client', express.static('client'));
+  app.use('/uploads', express.static('uploads'));
 
   const port = process.env.PORT || 3000;
 

@@ -9,6 +9,7 @@ const uploadFileController = (req, res) => {
     status: 'success',
     message: successfullUploadMessage,
     fileName: file.filename,
+    url: `${process.env.HOST}/uploads/${file.filename}`,
   });
 };
 

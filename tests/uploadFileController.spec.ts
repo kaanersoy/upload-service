@@ -1,9 +1,11 @@
 import faker from 'faker';
+import dotenv from 'dotenv';
 import { successfullUploadMessage, UPLOAD_FILE_FIELD } from '../src/constants';
 import { uploadFileController } from '../src/controllers/uploadFileController';
 
 describe('uploadFileController specs', () => {
   let request;
+  dotenv.config();
 
   const response = {
     send: jest.fn(() => response),
@@ -24,6 +26,7 @@ describe('uploadFileController specs', () => {
       status: 'success',
       message: successfullUploadMessage,
       fileName: request.file.filename,
+      url: `${process.env.HOST}/uploads/${request.file.filename}`,
     });
   });
 
