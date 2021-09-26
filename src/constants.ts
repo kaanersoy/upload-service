@@ -2,6 +2,6 @@ export const uploadFileDest = '/uploads';
 export const UPLOAD_FILE_FIELD = 'file';
 
 export const corsList = [
-  // Add cors for bad peoples :P
+  // Add a cors whitelist for bad people :P
   'http://localhost:5000',
 ];

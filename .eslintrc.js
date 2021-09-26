@@ -17,6 +17,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'import/prefer-default-export': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
