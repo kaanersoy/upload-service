@@ -1,4 +1,8 @@
 # Simple Upload/Storage Service
+
+Image upload service for easy image uploading and resize images when getting them.
+
+See TODOS in [TODOS.md](https://github.com/kaanersoy/upload-service/blob/master/TODO.md)
 ## Installation
 
 ### Set the environment variables
