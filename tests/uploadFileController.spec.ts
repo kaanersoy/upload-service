@@ -1,6 +1,6 @@
 import faker from 'faker';
 import dotenv from 'dotenv';
-import { successfullUploadMessage, UPLOAD_FILE_FIELD } from '../src/constants';
+import { successfulUploadMessage, UPLOAD_FILE_FIELD } from '../src/constants';
 import { uploadFileController } from '../src/controllers/uploadFileController';
 
 describe('uploadFileController specs', () => {
@@ -24,7 +24,7 @@ describe('uploadFileController specs', () => {
     uploadFileController(request, response);
     expect(response.send).toBeCalledWith({
       status: 'success',
-      message: successfullUploadMessage,
+      message: successfulUploadMessage,
       fileName: request.file.filename,
       url: `${process.env.HOST}/uploads/${request.file.filename}`,
     });

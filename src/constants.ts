@@ -8,4 +8,4 @@ export const corsList = [
   host,
 ];
 
-export const successfullUploadMessage = 'Upload is succesfull!';
+export const successfulUploadMessage = 'Upload is succesfull!';

@@ -44,7 +44,7 @@ const response = await fetch('/upload', {
 // Save the photo url for get photo.
 {
   status: "success",
-  message: "Upload is succesfull!",
+  message: "Upload is successful!",
   fileName: "XCgEl-paAjW-hKNfE9XP2BTu-67uww.png",
   url: "http://example.com/uploads/XCgEl-paAjW-hKNfE9XP2BTu-67uww.png"
 }
