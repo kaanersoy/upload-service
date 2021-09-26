@@ -1,3 +1,8 @@
 .env
 node_modules
 yarn-error.log
+.vscode
+.vscode/*.json
+dist/*
+dist
+./test-client
