@@ -68,6 +68,8 @@
     "./node_modules/*",
     "./node_modules_prune",
     "./node_modules_prune/*",
-    "**/test/"
+    "**/test/",
+    "**/tests/",
+    "jest.config.js",
   ]
 }

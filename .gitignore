@@ -8,3 +8,4 @@ dist
 client
 uploads/*.*
 uploads/*
+coverage
