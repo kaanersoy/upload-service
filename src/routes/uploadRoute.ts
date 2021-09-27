@@ -1,11 +1,10 @@
 /* istanbul ignore file */
 import express from 'express';
-import { UPLOAD_FILE_FIELD } from '../constants';
 import { uploadFileController } from '../controllers/uploadFileController';
-import uploadFile from '../helpers/upload-file';
+import { fileUploadMiddleWare } from '../helpers/uploadFile';
 
 const uploadRoute = express.Router();
 
-uploadRoute.post('/', uploadFile.single(UPLOAD_FILE_FIELD), uploadFileController);
+uploadRoute.post('/', fileUploadMiddleWare, uploadFileController);
 
 export default uploadRoute;

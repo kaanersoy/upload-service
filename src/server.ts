@@ -3,6 +3,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import uploadRoute from './routes/uploadRoute';
+import serveFileRouter from './routes/serveFileRoute';
 import { corsList } from './constants';
 
 function init() {
@@ -16,8 +17,8 @@ function init() {
 
   // Routes
   app.use('/upload', uploadRoute);
+  app.use('/uploads', serveFileRouter);
   app.use('/client', express.static('client'));
-  app.use('/uploads', express.static('uploads'));
 
   const port = process.env.PORT || 3000;
 
