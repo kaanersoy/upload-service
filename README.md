@@ -4,6 +4,9 @@ Easy to use upload & storage API with Express and TypeScript.
 
 Also allows the [resize 👇](https://github.com/kaanersoy/upload-service#get-photo)
 
+![how-to-use](https://media.giphy.com/media/FcpS66f3iL4yJbAAqh/giphy.gif?cid=790b7611572e23c2c4fbdc09639c7a796a5dfb947ced03d5&rid=giphy.gif&ct=g)
+
+
 ## Installation
 
 ### Set the environment variables
