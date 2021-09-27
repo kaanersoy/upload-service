@@ -1,8 +1,9 @@
-# Simple Upload/Storage Service
+# Upload/Storage API with Express & TypeScript
 
-Image upload service for easy image uploading and resize images when getting them.
+Easy to use upload & storage API with Express and TypeScript.
 
-See TODOS in [TODOS.md](https://github.com/kaanersoy/upload-service/blob/master/TODO.md)
+Also allows the [resize 👇](https://github.com/kaanersoy/upload-service#get-photo)
+
 ## Installation
 
 ### Set the environment variables
@@ -67,3 +68,7 @@ Example:
 // This will gave you a 1000px width resized image.
 GET /uploads/:photoName?resize=1000
 ```
+
+
+## LICENSE
+See LICENSE at: [LICENSE.md](https://github.com/kaanersoy/upload-service/blob/master/LICENSE)
