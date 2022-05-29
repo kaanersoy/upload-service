@@ -21,7 +21,7 @@ const fileFilter = (req, file, cb) => cb(null, file.mimetype.startsWith('image')
 
 export const fileUploadMiddleWare = async (req, res, next) => {
   const upload = await multer({
-    dest: path.join('.s/', uploadFileDest),
+    dest: path.join('./', uploadFileDest),
     storage,
     fileFilter,
   }).single(UPLOAD_FILE_FIELD);

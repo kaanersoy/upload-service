@@ -8,4 +8,5 @@ dist
 client
 uploads/*.*
 uploads/*
+!uploads/.gitkeep
 coverage
