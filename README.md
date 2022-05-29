@@ -1,5 +1,8 @@
 # Upload/Storage API with Express & TypeScript
 
+### Coverage: 
+[![codecov](https://codecov.io/gh/kaanersoy/upload-service/branch/master/graph/badge.svg?token=JILBDE2FTV)](https://codecov.io/gh/kaanersoy/upload-service)
+
 Easy to use upload & storage API with Express and TypeScript.
 
 Also allows the [resize 👇](https://github.com/kaanersoy/upload-service#get-photo)
