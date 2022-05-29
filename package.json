@@ -8,7 +8,8 @@
     "start:watch": "nodemon dist/server.js",
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "test": "jest --coverage"
+    "test": "jest",
+    "lint": "eslint"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/faker": "^6.6.9",
     "@types/jest": "^27.0.2",
     "@types/multer": "^1.4.7",
     "@types/node": "^16.10.1",

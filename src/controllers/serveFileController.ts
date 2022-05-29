@@ -6,5 +6,6 @@ export async function serveFileControllerWithResize(req, res) {
   const resizeWidth = Number(resize) || undefined;
 
   const { buffer, fileExtension } = await getFileResized(fileName, resizeWidth);
-  return res.setHeader('Content-Type', `image/${fileExtension}`).send(buffer);
+
+  res.setHeader('Content-Type', `image/${fileExtension}`).send(buffer);
 }
