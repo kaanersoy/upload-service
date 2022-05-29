@@ -12,3 +12,5 @@ jobs:
       - name: Run tests
         run: |
           yarn test
+      - name: Send coverages
+        uses: codecov/codecov-action@v2
