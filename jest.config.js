@@ -1,16 +1,16 @@
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'jsdom',
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
   moduleNameMapper: {
-    '^.+\\.(css|less|scss)$': 'babel-jest',
+    "^.+\\.(css|less|scss)$": "babel-jest",
   },
   collectCoverage: true,
   collectCoverageFrom: [
-    '**/*.{ts,tsx}',
+    "**/*.{ts,tsx}",
   ],
   testPathIgnorePatterns: [
-    '<rootDir>/node_modules/',
-    '<rootDir>/dist/',
+    "<rootDir>/node_modules/",
+    "<rootDir>/dist/",
   ],
   coverageThreshold: {
     global: {

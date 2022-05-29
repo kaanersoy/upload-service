@@ -1,6 +1,6 @@
 import * as path from "path";
 import * as fs from "fs";
-import { getFileResized } from "../src/helpers/getResizedFile";
+import { getFileResized } from "../../src/helpers/getResizedFile";
 
 jest.mock("fs");
 jest.mock("path");

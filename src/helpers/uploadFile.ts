@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import multer from "multer";
 import { nanoid } from "nanoid";
 import path from "path";

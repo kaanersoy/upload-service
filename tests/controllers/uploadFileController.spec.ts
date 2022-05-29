@@ -1,7 +1,7 @@
 import faker from "faker";
 import dotenv from "dotenv";
-import { successfulUploadMessage, UPLOAD_FILE_FIELD } from "../src/constants";
-import { uploadFileController } from "../src/controllers/uploadFileController";
+import { successfulUploadMessage, UPLOAD_FILE_FIELD } from "../../src/constants";
+import { uploadFileController } from "../../src/controllers/uploadFileController";
 
 describe("uploadFileController specs", () => {
   let request;

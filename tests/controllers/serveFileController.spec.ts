@@ -1,6 +1,6 @@
 import faker from "faker";
-import { serveFileControllerWithResize } from "../src/controllers/serveFileController";
-import * as helpers from "../src/helpers/getResizedFile";
+import { serveFileControllerWithResize } from "../../src/controllers/serveFileController";
+import * as helpers from "../../src/helpers/getResizedFile";
 
 describe("serveFileControllerWithResize specs", () => {
   let request;
